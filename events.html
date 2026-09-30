@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events, Photos & Facebook Reels | Lotus Academy, Simara</title>
+  <meta name="description" content="Watch latest events, festival celebrations, sports meet, science exhibitions, and official Facebook reels from Lotus Academy Simara.">
+  <link rel="canonical" href="https://lotusacademy.edu.np/events.html">
+  <meta property="og:title" content="Events, Photos & Facebook Reels | Lotus Academy, Simara">
+  <meta property="og:description" content="Latest events, photos, and Facebook reels from Lotus Academy Simara.">
+  <meta property="og:url" content="https://lotusacademy.edu.np/events.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span class="topbar-item"><i class="fa-solid fa-location-dot"></i> Jeetpursimara-2, Simara, Bara</span>
+        <span class="topbar-item"><i class="fa-solid fa-phone"></i> <a href="tel:+9779801510839">+977 9801510839</a></span>
+        <span class="topbar-item"><i class="fa-solid fa-award"></i> Estd. 2057 B.S.</span>
+      </div>
+      <div class="topbar-social">
+        <a href="https://www.facebook.com/academylotus.simara" target="_blank" rel="noopener noreferrer" class="social-link fb"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/9779801510839" target="_blank" rel="noopener noreferrer" class="social-link" style="background:#25d366;"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo.jpg" alt="Lotus Crest Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-name">LOTUS ACADEMY</span>
+            <span class="brand-sub">+2 College & Secondary School</span>
+          </div>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="academics.html" class="nav-link">Academics</a>
+          <a href="index.html#facilities" class="nav-link">Facilities</a>
+          <a href="events.html" class="nav-link active">Events & Reels</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="http://127.0.0.1:8000/login" target="_blank" class="btn btn-login">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <span>Login</span>
+          </a>
+          <button class="hamburger" id="hamburgerBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); color: #fff; padding: 60px 0; text-align: center;">
+    <div class="container">
+      <span class="section-badge" style="background: rgba(245, 158, 11, 0.2); color: var(--accent-gold);">Live Community Hub</span>
+      <h1 style="font-size: 2.6rem; font-weight: 800; margin-top: 10px;">Events, Photos & Facebook Reels</h1>
+      <p style="color: #cbd5e1; max-width: 650px; margin: 10px auto 0;">All the vibrant moments, athletic achievements, and latest reels published by Lotus Academy.</p>
+    </div>
+  </section>
+
+  <!-- Events Showcase -->
+  <section class="section">
+    <div class="container">
+      <div class="events-layout">
+        <!-- Main Event Grid -->
+        <div class="events-main-feed">
+          <div class="events-hub-header">
+            <div class="event-filter-tabs">
+              <button class="tab-btn active" data-filter="all">All Updates</button>
+              <button class="tab-btn" data-filter="reels"><i class="fa-solid fa-film"></i> Facebook Reels</button>
+              <button class="tab-btn" data-filter="events"><i class="fa-solid fa-trophy"></i> Sports & Meets</button>
+              <button class="tab-btn" data-filter="academic"><i class="fa-solid fa-award"></i> Cultural & Academic</button>
+            </div>
+          </div>
+
+          <div class="events-cards-grid" id="eventsCardsContainer">
+            <!-- Dynamically populated by js/events-feed.js -->
+          </div>
+        </div>
+
+        <!-- Facebook Live Embed -->
+        <aside class="events-sidebar">
+          <div class="fb-sidebar-card">
+            <div class="fb-sidebar-header">
+              <div class="fb-icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
+              <div>
+                <h3>Official Facebook Page</h3>
+                <p><i class="fa-solid fa-circle" style="color:#10b981; font-size:0.6rem;"></i> Live Timeline</p>
+              </div>
+            </div>
+
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+              Direct integration with <strong>facebook.com/academylotus.simara</strong>. New reels and photos posted to our Facebook page show up right here.
+            </p>
+
+            <div class="fb-embed-container">
+              <div id="fb-root"></div>
+              <div class="fb-page" 
+                   data-href="https://www.facebook.com/academylotus.simara" 
+                   data-tabs="timeline,events" 
+                   data-width="340" 
+                   data-height="500" 
+                   data-small-header="false" 
+                   data-adapt-container-width="true" 
+                   data-hide-cover="false" 
+                   data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/academylotus.simara" class="fb-xfbml-parse-ignore">
+                  <div style="padding: 20px; text-align: center;">
+                    <i class="fa-brands fa-facebook" style="font-size: 2rem; color: #1877f2; margin-bottom: 10px;"></i>
+                    <p style="font-weight: 700;">Lotus Academy Simara</p>
+                    <a href="https://www.facebook.com/academylotus.simara" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="margin-top: 10px;">
+                      Open Facebook Page
+                    </a>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+              <a href="https://www.facebook.com/academylotus.simara" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm" style="width: 100%;">
+                <i class="fa-brands fa-facebook"></i> Visit @academylotus.simara
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-overlay" id="eventModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeEventModal()" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body">
+        <h3 id="modalTitle">Title</h3>
+        <p id="modalCaption">Caption</p>
+        <div style="margin-top: 16px;">
+          <a href="#" target="_blank" rel="noopener noreferrer" id="modalFbLink" class="btn btn-primary btn-sm">
+            <i class="fa-brands fa-facebook"></i> View on Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand" itemscope itemtype="https://schema.org/EducationalOrganization">
+          <div class="footer-brand-header">
+            <img src="assets/images/logo.jpg" alt="Lotus Academy Crest Logo" class="brand-logo-img" itemprop="logo">
+            <div>
+              <h2 class="footer-title" itemprop="name">LOTUS ACADEMY</h2>
+              <span class="footer-badge"><i class="fa-solid fa-award"></i> Estd. 2057 B.S. • NEB Affiliated</span>
+            </div>
+          </div>
+          <p class="footer-desc" itemprop="description">
+            Simara's leading English-medium institution empowering students in Bara district with high-standard <strong>+2 Management</strong>, <strong>+2 Science</strong>, and secondary education through modern labs and character-driven mentorship.
+          </p>
+          <div class="footer-social-wrap">
+            <span class="social-label">Official Socials:</span>
+            <div class="topbar-social">
+              <a href="https://www.facebook.com/academylotus.simara" target="_blank" rel="noopener noreferrer" class="social-link fb" title="Facebook Page - Lotus Academy Simara" aria-label="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://wa.me/9779801510839" target="_blank" rel="noopener noreferrer" class="social-link" style="background:#25d366;" title="WhatsApp - +977 9801510839" aria-label="WhatsApp Contact"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 1: Quick Links (Left side on mobile) -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fa-solid fa-angle-right"></i> Academics</a></li>
+            <li><a href="events.html"><i class="fa-solid fa-angle-right"></i> Events & Reels</a></li>
+            <li><a href="admissions.html"><i class="fa-solid fa-angle-right"></i> +2 Admissions</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Campus</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Programs & Campus (Right side on mobile) -->
+        <div class="footer-col">
+          <h3>Our Programs</h3>
+          <ul class="footer-links">
+            <li><a href="academics.html#management"><i class="fa-solid fa-angle-right"></i> +2 Management</a></li>
+            <li><a href="academics.html#science"><i class="fa-solid fa-angle-right"></i> +2 Science</a></li>
+            <li><a href="academics.html#school"><i class="fa-solid fa-angle-right"></i> School (ECD - 10)</a></li>
+            <li><a href="index.html#facilities"><i class="fa-solid fa-angle-right"></i> Campus Facilities</a></li>
+            <li><a href="admissions.html"><i class="fa-solid fa-angle-right"></i> Scholarships</a></li>
+            <li><a href="http://127.0.0.1:8000/login" target="_blank"><i class="fa-solid fa-arrow-right-to-bracket"></i> Staff / Admin</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Campus (Full width on mobile) -->
+        <div class="footer-col footer-contact">
+          <h3>Contact Campus</h3>
+          <address class="footer-contact-info" itemscope itemtype="https://schema.org/PostalAddress">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>
+                <strong itemprop="streetAddress">Jeetpursimara Sub-Metropolitan-2</strong>, 
+                <span itemprop="addressLocality">Simara</span>, <span itemprop="addressRegion">Bara, Madhesh Province, Nepal</span>
+              </span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>Direct Call: <a href="tel:+9779801510839" itemprop="telephone">+977 9801510839</a></span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>Inquiries: <a href="mailto:info@lotusacademy.edu.np" itemprop="email">info@lotusacademy.edu.np</a></span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Office Hours: Sun - Fri (6:30 AM - 4:30 PM)</span>
+            </li>
+          </address>
+          <div class="footer-contact-actions">
+            <a href="https://maps.google.com/?q=Lotus+Academy+Simara+Bara+Nepal" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">
+              <i class="fa-solid fa-map-location-dot"></i> View Map
+            </a>
+            <a href="tel:+9779801510839" class="btn btn-sm btn-accent">
+              <i class="fa-solid fa-phone-volume"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> <strong>Lotus Academy</strong> (+2 College & Secondary School). All Rights Reserved.
+        </div>
+        <div class="footer-bottom-seo">
+          <span>Affiliated with NEB Nepal • Estd. 2057 B.S. • Jeetpursimara-2, Simara, Bara</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-action-bar">
+    <div class="mobile-action-bar-inner">
+      <a href="tel:+9779801510839" class="action-bar-btn call"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+      <a href="https://wa.me/9779801510839" target="_blank" rel="noopener noreferrer" class="action-bar-btn wa"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+      <a href="admissions.html" class="action-bar-btn apply"><i class="fa-solid fa-graduation-cap"></i><span>Apply</span></a>
+      <a href="https://www.facebook.com/academylotus.simara" target="_blank" rel="noopener noreferrer" class="action-bar-btn fb"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+    </div>
+  </div>
+
+  <script src="js/events-feed.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

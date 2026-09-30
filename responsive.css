@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Lotus Academy - Responsive Breakpoints & Mobile Enhancements
+   ========================================================================== */
+
+/* Laptop & Medium Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .nav-menu {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 0.88rem;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .stats-card {
+    padding: 24px 28px;
+    gap: 20px;
+  }
+
+  .stat-info h3 {
+    font-size: 1.7rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .topbar {
+    display: none; /* Keep mobile clean */
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: -100%;
+    width: 82%;
+    max-width: 320px;
+    height: calc(100vh - 72px);
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 24px;
+    box-shadow: 10px 0 25px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    padding: 60px 0 100px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-visual {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .stats-ribbon {
+    margin-top: -50px;
+    margin-bottom: 50px;
+  }
+
+  .stats-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .fb-sidebar-card {
+    position: static;
+  }
+
+  .notices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+/* Mobile Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 65px; /* Prevent bottom action bar from overlapping */
+  }
+
+  .mobile-action-bar {
+    display: block;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  .stats-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .stat-item {
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .notice-date-box {
+    width: 100%;
+    height: 38px;
+    flex-direction: row;
+    gap: 8px;
+    border-radius: var(--radius-sm);
+  }
+
+  .notice-date-box .day {
+    font-size: 1.1rem;
+  }
+
+  /* Mobile Footer: 2-column balanced grid so right side is never empty */
+  .footer {
+    padding: 50px 0 25px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 18px;
+    margin-bottom: 35px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer-col h3 {
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem;
+    padding: 2px 0;
+  }
+
+  .footer-col.footer-contact {
+    grid-column: 1 / -1; /* Spans full width across both columns */
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: 20px 16px;
+    margin-top: 6px;
+  }
+
+  .footer-contact-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .footer-contact-actions .btn {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 12px;
+    font-size: 0.82rem;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 75px; /* Ensures clearance above sticky mobile action bar */
+  }
+}
+
+/* Very Small Mobile Screens (max-width: 420px) */
+@media (max-width: 420px) {
+  .brand-text h1 {
+    font-size: 1.15rem;
+  }
+
+  .brand-logo-img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .nav-actions .btn {
+    display: none; /* Saved in mobile sticky footer */
+  }
+
+  .footer-grid {
+    gap: 26px 14px;
+  }
+
+  .footer-links a {
+    font-size: 0.82rem;
+    gap: 5px;
+  }
+
+  .footer-contact-actions {
+    flex-direction: column;
+  }
+}
